@@ -19,3 +19,11 @@ body, html {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+h5.boldtext{
+    font-weight: 700;
+}
+
+h3.boldtext{
+    font-weight: 700;
+}
