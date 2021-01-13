@@ -6,20 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="./action.js"></script>
     <title>Welcome!</title>
   </head>
   <body>
     <div class="bg-atas">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid mx-3 px-5 py-2">
+          <a class="navbar-brand judul">AFIF ALFAUZAN</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active boldtext" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link boldtext" onclick="goTo('AboutMe')" type="button">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link boldtext" onclick="goTo('MySkill')" type="button">Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link boldtext" onclick="goTo('FollowMe')" type="button">Follow Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link boldtext" onclick="goTo('MyProject')">My Project</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <br><br>
     </div>
 
-    <div class="container">
+    <div class="container" id="AboutMe">
       <br>
       <div class="row">
         <div class="col-sm-4 mt-4">
@@ -34,7 +60,7 @@
       </div>
       <br><br><br>
 
-      <div class="container">
+      <div class="container" id="MySkill">
           <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext">My Skill</h3><br>
           <h5 class="text-center">Design</h5>
           <div class="row mx-auto" style="width: 50%; height: 50%;">
@@ -108,7 +134,7 @@
 
           <!-- Sosmed -->
           <h5 class="text-center border-top border-primary"></h5>
-          <h5 class="text-center py-2">Follow Me!</h5><br>
+          <h5 class="text-center py-2" id="FollowMe">Follow Me!</h5><br>
           <div class="row mx-auto" style="width: 50%; height: 50%;">
             <div class="col md-auto mx-auto text-center">
               <a href="https://www.instagram.com/alfaauzan/?hl=id" target="_blank"><img src="https://img.icons8.com/ios/50/000000/instagram-new.png" style="width: auto; height: auto;"></a>
@@ -129,12 +155,12 @@
       
 
       <!-- Gallery -->
-      <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext">Mini Gallery</h3>
+      <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext" id="MyProject">My Project</h3>
       <br>
       <div class="container">
-          <div class="col mb-5">
-            <h5 class="text-center mt-2 boldtext">Manipulation</h5><br>
-            <div id="carouselExampleControls" class="carousel slide my-auto mx-auto " data-ride="carousel" style="width: 80%; height: 80%;">
+          <div class="row mb-5 justify-content-center">
+            <h5 class="text-center mt-3 mb-4 boldtext">Manipulation</h5><br>
+            <div id="carouselManipulation" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="Image/c1.jpg" class="d-block w-100" alt="...">
@@ -146,19 +172,19 @@
                   <img src="Image/c3.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <a class="carousel-control-prev" href="#carouselManipulation" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="visually-hidden">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <a class="carousel-control-next" href="#carouselManipulation" role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="visually-hidden">Next</span>
               </a>
             </div>
           </div>
-          <div class="col border-top border-gray my-5">
-            <h5 class="text-center mt-2 boldtext">Background Drawing</h5><br>
-            <div id="carouselExampleControls3" class="carousel slide my-auto mx-auto" data-ride="carousel" style="width: 80%; height: 80%;">
+          <div class="row border-top border-gray my-5 justify-content-center">
+            <h5 class="text-center mt-3 mb-4 boldtext">Background Drawing</h5><br>
+            <div id="carouselBG" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="Image/bg-atas.png" class="d-block w-100" alt="...">
@@ -170,20 +196,20 @@
                   <img src="Image/d2.png" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+              <a class="carousel-control-prev" href="#carouselBG" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="visually-hidden">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+              <a class="carousel-control-next" href="#carouselBG" role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="visually-hidden">Next</span>
               </a>
             </div>
           </div>
 
-          <div class="col border-top border-gray my-5">
-            <h5 class="text-center mt-2 boldtext">Vexel Art</h5><br>
-            <div id="carouselExampleControls2" class="carousel slide my-auto mx-auto" data-ride="carousel" style="width: 80%; height: 80%;">
+          <div class="row border-top border-gray my-5 justify-content-center">
+            <h5 class="text-center mt-3 mb-4 boldtext">Vexel Art</h5><br>
+            <div id="carouselVexel" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="Image/b1.png" class="d-block w-100" alt="...">
@@ -198,32 +224,32 @@
                   <img src="Image/b4.png" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+              <a class="carousel-control-prev" href="#carouselVexel" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="visually-hidden">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+              <a class="carousel-control-next" href="#carouselVexel" role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="visually-hidden">Next</span>
               </a>
             </div>
           </div>
           
-          <div class="col border-top border-gray my-5">
-            <h5 class="text-center mt-2 boldtext">UI App Design</h5><br>
-            <div id="carouselExampleControls2" class="carousel slide my-auto mx-auto" data-ride="carousel" style="width: 80%; height: 80%;">
+          <div class="row border-top border-gray my-5 justify-content-center">
+            <h5 class="text-center mt-3 mb-4 boldtext">UI App Design</h5><br>
+            <div id="carouselUI" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="Image/UI1.png" class="d-block w-100" alt="...">
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+              <a class="carousel-control-prev" href="#carouselUI" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="visually-hidden">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+              <a class="carousel-control-next" href="#carouselUI" role="button" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="visually-hidden">Next</span>
               </a>
             </div>
           </div>

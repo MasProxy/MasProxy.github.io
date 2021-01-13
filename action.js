@@ -7,3 +7,8 @@ window.onload = function(){
         } 
     }, false); 
 }
+
+function goTo(tujuan){
+    var element = document.getElementById(tujuan);
+    element.scrollIntoView();;
+}
