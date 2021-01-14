@@ -14,17 +14,17 @@
     <title>Welcome!</title>
   </head>
   <body>
-    <div class="bg-atas">
+    <div class="bg-atas" id="Home">
       <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d6cbc2;">
         <div class="container-fluid mx-3 py-2">
-          <a class="navbar-brand judul">AFIF ALFAUZAN</a>
+          <a class="navbar-brand judul" onclick="goTo('Home')" type="button">AFIF ALFAUZAN</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active boldtext" aria-current="page" href="#">Home</a>
+                <a class="nav-link boldtext" aria-current="page" onclick="goTo('Home')" type="button">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link boldtext" onclick="goTo('AboutMe')" type="button">About</a>
