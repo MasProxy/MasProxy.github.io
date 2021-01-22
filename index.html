@@ -5,20 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <link rel="icon" href="./Image/Logo_MasProxy_outline.svg" type="image/gif" sizes="16x16">
+
     <link href='https://css.gg/chevron-up.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="./action.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Welcome!</title>
   </head>
   <body>
+    <script>
+      AOS.init();
+    </script>
+
     <div class="bg-atas" id="Home">
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d6cbc2;">
-        <div class="container-fluid mx-3 py-2">
-          <a class="navbar-brand judul" onclick="goTo('Home')" type="button">AFIF ALFAUZAN</a>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d6cbc2;" data-aos="fade-down" data-aos-once="true" data-aos-duration="2000">
+        <div class="container-fluid mx-3 py-2" data-aos="fade-right">
+          <a class="navbar-brand judul" onclick="goTo('Home')" type="button">
+            <img src="./Image/Logo_MasProxy.svg" width="36px" height="36px">
+            MAS PROXY</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -34,9 +43,6 @@
                 <a class="nav-link boldtext" onclick="goTo('MySkill')" type="button">Skill</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link boldtext" onclick="goTo('FollowMe')" type="button">Follow Me</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link boldtext" onclick="goTo('MyProject')" type="button">My Project</a>
               </li>
             </ul>
@@ -49,222 +55,286 @@
     <a class="float" id="btn_up" onclick="goUp()" type="button" style="display: none;"><i class="gg-chevron-up" style="margin: auto;"></i></a>
 
     <div class="container" id="AboutMe">
-      <br>
-      <div class="row">
-        <div class="col-sm-4 mt-4">
+      <div class="row py-5 mx-auto" data-aos="fade-in" data-aos-once="true" data-aos-duration="1500">
+        <div class="col-sm-4">
           <img src="Image/profile.jpg" class="rounded-circle border border-light mx-auto d-block" alt="..." style="width: 200pt; height: 200pt;">
         </div>
-        <div class="col-sm-8 mt-4">
+        <div class="col-sm-8">
           <br><br><br>
           <h3 class="text-center border-bottom border-primary pb-2 boldtext">Hello, my name is Afif Alfauzan</h3><br>
           <h5 class="text-center">i'm a programmer and graphic designer. I want to open a service in accordance with my skills, at the right price. I hope we can work together.</h5><br>
-          <br>
+          <div class="row row-cols-auto justify-content-center">
+            <div class="col">
+              <a href="https://www.instagram.com/alfaauzan/?hl=id" target="_blank"><img src="https://img.icons8.com/ios/36/000000/instagram-new.png" style="width: auto; height: auto;"></a>
+            </div>
+            <div class="col">
+              <a href="https://id.pinterest.com/MasProxy/" target="_blank"><img src="https://img.icons8.com/ios/36/000000/pinterest.png" style="width: auto; height: auto;"></a>
+            </div>
+            <div class="col">
+              <a href="https://www.facebook.com/afif.alfauzan" target="_blank"><img src="https://img.icons8.com/ios/36/000000/facebook-new.png" style="width: auto; height: auto;"></a>
+            </div>
+          </div>
         </div>
       </div>
-      <br><br><br>
-
-      <div class="container" id="MySkill">
-          <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext">My Skill</h3><br>
-          <h5 class="text-center">Design</h5>
-          <div class="row mx-auto" style="width: 50%; height: 50%;">
-            <div class="col md-auto mx-auto text-center">
-              <img src="https://img.icons8.com/color/60/000000/adobe-illustrator.png" style="width: auto; height: auto;">
-              <br><h6>Adobe Illustrator<h6><br>
-            </div>
-            <div class="col md-auto mx-auto text-center">
-              <img src="https://img.icons8.com/color/60/000000/adobe-photoshop.png" style="width: auto; height: auto;">
-              <br><h6>Adobe Photoshop<h6><br>
-            </div>
-            <div class="col md-auto mx-auto text-center">
-              <img src="https://img.icons8.com/color/60/000000/adobe-xd.png" style="width: auto; height: auto;">
-              <br><h6>Adobe XD<h6><br>
-            </div>
-          </div>
-          <br><br>
-
-
-          <h5 class="text-center border-top border-gray"></h5>
-          <h5 class="text-center py-2">Video Editing</h5>
-          <div class="row mx-auto" style="width: 50%; height: 50%;">
-            <div class="col md-auto mx-auto text-center">
-              <img src="https://img.icons8.com/color/60/000000/adobe-premiere-pro.png" style="width: auto; height: auto;">
-              <br><h6>Adobe Premiere<h6><br>
-            </div>
-            
-            <div class="col md-auto mx-auto text-center">
-              <img src="https://img.icons8.com/color/60/000000/adobe-after-effects.png" style="width: auto; height: auto;">
-              <br><h6>Adobe After Effect<h6><br>
-            </div>
-          </div>
-          <br><br>
-          
-          
-          <h5 class="text-center border-top border-gray"></h5>
-          <h5 class="text-center py-2">3D Modeling</h5>
-          <div class="row mx-auto" style="width: 50%; height: 50%;">
-            <div class="col md-auto mx-auto text-center">
-              <img src="https://img.icons8.com/color/60/000000/blender-3d.png" style="width: auto; height: auto;">
-              <br><h6>Blender 3D<h6><br>
-            </div>
-          </div>
-          <br><br>
-          
-          <h5 class="text-center border-top border-gray"></h5>
-          <h5 class="text-center py-2">Programming Language</h5>
-          <div class="row mx-auto" style="width: 50%; height: 50%;">
-            <div class="col md-auto mx-auto text-center">
-              <img src="https://img.icons8.com/color/60/000000/c-programming.png" style="width: auto; height: auto;">
-              <br><h6>C<h6><br>
-            </div>
-            <div class="col md-auto mx-auto text-center">
-              <img src="https://img.icons8.com/officel/60/000000/php-logo.png" style="width: auto; height: auto;">
-              <br><h6>PHP<h6><br>
-            </div>
-            <div class="col md-auto mx-auto text-center">
-              <img src="https://img.icons8.com/color/60/000000/c-sharp-logo-2.png" style="width: auto; height: auto;">
-              <br><h6>C#<h6><br>
-            </div>
-            <div class="col md-auto mx-auto text-center">
-              <img src="https://img.icons8.com/color/60/000000/java-coffee-cup-logo.png" style="width: auto; height: auto;">
-              <br><h6>Java<h6><br>
-            </div>
-            <div class="col md-auto mx-auto text-center">
-              <img src="https://img.icons8.com/color/60/000000/javascript.png" style="width: auto; height: auto;"/>
-              <br><h6>Javascript<h6><br>
-            </div>
-          </div>
-          <br><br>
-
-          <!-- Sosmed -->
-          <h5 class="text-center border-top border-primary"></h5>
-          <h5 class="text-center py-2" id="FollowMe">Follow Me!</h5><br>
-          <div class="row mx-auto" style="width: 50%; height: 50%;">
-            <div class="col md-auto mx-auto text-center">
-              <a href="https://www.instagram.com/alfaauzan/?hl=id" target="_blank"><img src="https://img.icons8.com/ios/50/000000/instagram-new.png" style="width: auto; height: auto;"></a>
-              <br><h6>Instagram<h6><br>
-            </div>
-            <div class="col md-auto mx-auto text-center">
-              <a href="https://id.pinterest.com/MasProxy/" target="_blank"><img src="https://img.icons8.com/ios/50/000000/pinterest.png" style="width: auto; height: auto;"></a>
-              <br><h6>Pinterest<h6><br>
-            </div>
-            <div class="col md-auto mx-auto text-center">
-              <a href="https://www.youtube.com/channel/UCG2Rlv3_qrXFppuuQlNegWg?view_as=subscriber" target="_blank"><img src="https://img.icons8.com/carbon-copy/50/000000/youtube.png" style="width: auto; height: auto;"></a>
-              <br><h6>Youtube<h6><br>
-            </div>
-          </div>
-          <br><br>
-        
-      </div>
       
+      <!-- My Offer -->
+      <div class="container">
+        <div class="row py-4 mx-auto mb-5">
+          <h4 class="text text-center py-3 border-top border-gray" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">Which I am Offering</h4>
+          <div class="col" data-aos="fade-right" data-aos-once="true" data-aos-duration="3500">
+            <div class="card mx-auto shadow-sm my-3" style="width: 18rem; height: 15rem;">
+              <div class="card-body">
+                <i class="gg-code-slash my-3 mx-auto"></i>
+                <h6 class="text text-center boldtext">Front End Web Developer</h6>
+                <p>
+                  <li>Build website interface with html, css, and javascript</li>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col" data-aos="fade-up" data-aos-once="true" data-aos-duration="3500">
+            <div class="card mx-auto shadow-sm my-3" style="width: 18rem; height: 15rem;">
+              <div class="card-body">
+                <i class="gg-brush my-3 mx-auto"></i>
+                <h6 class="text text-center boldtext">Graphic Designer</h6>
+                <li>Poster design</li>
+                <li>UI web & mobile app design</li>
+                <li>Banner design</li>
+              </div>
+            </div>
+          </div>
+          <div class="col" data-aos="fade-left" data-aos-once="true" data-aos-duration="3500">
+            <div class="card mx-auto shadow-sm my-3" style="width: 18rem; height: 15rem;">
+              <div class="card-body">
+                <i class="gg-image my-3 mx-auto"></i>
+                <h6 class="text text-center boldtext">Image Illustrator & Editing</h6>
+                <li>Flat background from real photo</li>
+                <li>Flat design object</li>
+                <li>Photo manipulation</li>
+                <li>Background remover</li>
+                <li>Vexel art</li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- My SKill -->
+      <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext" id="MySkill" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">My Skill</h3><br>
+      <h5 class="text-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">Design</h5>
+      <div class="row mx-auto" style="width: 50%; height: 50%;">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">
+          <img src="https://img.icons8.com/color/60/000000/adobe-illustrator.png" style="width: auto; height: auto;">
+          <br><h6>Adobe Illustrator<h6><br>
+        </div>
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="2500">
+          <img src="https://img.icons8.com/color/60/000000/adobe-photoshop.png" style="width: auto; height: auto;">
+          <br><h6>Adobe Photoshop<h6><br>
+        </div>
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="3500">
+          <img src="https://img.icons8.com/color/60/000000/adobe-xd.png" style="width: auto; height: auto;">
+          <br><h6>Adobe XD<h6><br>
+        </div>
+      </div>
+      <br><br>
+
+
+      <h5 class="text-center border-top border-gray"></h5>
+      <h5 class="text-center py-2" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">Video Editing</h5>
+      <div class="row mx-auto " style="width: 50%; height: 50%;">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">
+          <img src="https://img.icons8.com/color/60/000000/adobe-premiere-pro.png" style="width: auto; height: auto;">
+          <br><h6>Adobe Premiere<h6><br>
+        </div>
+        
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="2500">
+          <img src="https://img.icons8.com/color/60/000000/adobe-after-effects.png" style="width: auto; height: auto;">
+          <br><h6>Adobe After Effect<h6><br>
+        </div>
+      </div>
+      <br><br>
+      
+      <h5 class="text-center border-top border-gray"></h5>
+      <h5 class="text-center py-2" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">Game Engine</h5>
+      <div class="row mx-auto" style="width: 50%; height: 50%;">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">
+          <img src="https://img.icons8.com/ios-filled/60/000000/unity.png" style="width: auto; height: auto;">
+          <br><h6>Unity<h6><br>
+        </div>
+      </div>
+      <br><br>
+      
+      <h5 class="text-center border-top border-gray"></h5>
+      <h5 class="text-center py-2" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">Programming Language</h5>
+      <div class="row mx-auto" style="width: 50%; height: 50%;">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">
+          <img src="https://img.icons8.com/color/60/000000/c-programming.png" style="width: auto; height: auto;">
+          <br><h6>C<h6><br>
+        </div>
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="2500">
+          <img src="https://img.icons8.com/officel/60/000000/php-logo.png" style="width: auto; height: auto;">
+          <br><h6>PHP<h6><br>
+        </div>
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="3500">
+          <img src="https://img.icons8.com/color/60/000000/c-sharp-logo-2.png" style="width: auto; height: auto;">
+          <br><h6>C#<h6><br>
+        </div>
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="4500">
+          <img src="https://img.icons8.com/color/60/000000/java-coffee-cup-logo.png" style="width: auto; height: auto;">
+          <br><h6>Java<h6><br>
+        </div>
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="5500">
+          <img src="https://img.icons8.com/color/60/000000/javascript.png" style="width: auto; height: auto;"/>
+          <br><h6>Javascript<h6><br>
+        </div>
+      </div>
+      <br><br>
 
       <!-- Gallery -->
       <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext" id="MyProject">My Project</h3>
       <br>
-      <div class="container">
-          <div class="row mb-5 justify-content-center">
-            <h5 class="text-center mt-3 mb-4 boldtext">Manipulation</h5><br>
-            <div id="carouselManipulation" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="Image/c1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="Image/c2.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="Image/c3.jpg" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselManipulation" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselManipulation" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </a>
+      <div class="row mb-5 justify-content-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
+        <h5 class="text-center mt-3 mb-4 boldtext">Flat Illustration</h5><br>
+        <div id="carouselManipulation" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Image/flat_coffe_cup.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/flat_donut_with_topping.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/flat_wireless_earphone.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/flat_chocolate_ice_cream.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
-          <div class="row border-top border-gray my-5 justify-content-center">
-            <h5 class="text-center mt-3 mb-4 boldtext">Background Drawing</h5><br>
-            <div id="carouselBG" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="Image/bg-atas.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="Image/d1.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="Image/d2.png" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselBG" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselBG" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </a>
+          <a class="carousel-control-prev" href="#carouselManipulation" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselManipulation" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="row mb-5 border-top border-gray justify-content-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
+        <h5 class="text-center mt-3 mb-4 boldtext">Manipulation</h5><br>
+        <div id="carouselManipulation" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Image/c1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/c2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/c3.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
+          <a class="carousel-control-prev" href="#carouselManipulation" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselManipulation" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="row border-top border-gray my-5 justify-content-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
+        <h5 class="text-center mt-3 mb-4 boldtext">Background Drawing</h5><br>
+        <div id="carouselBG" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Image/bg-atas.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/d1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/d2.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselBG" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselBG" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
 
-          <div class="row border-top border-gray my-5 justify-content-center">
-            <h5 class="text-center mt-3 mb-4 boldtext">Vexel Art</h5><br>
-            <div id="carouselVexel" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="Image/b1.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="Image/b2.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="Image/b3.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="Image/b4.png" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselVexel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselVexel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </a>
+      <div class="row border-top border-gray my-5 justify-content-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
+        <h5 class="text-center mt-3 mb-4 boldtext">Vexel Art</h5><br>
+        <div id="carouselVexel" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Image/b1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/b2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/b3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/b4.png" class="d-block w-100" alt="...">
             </div>
           </div>
-          
-          <div class="row border-top border-gray my-5 justify-content-center">
-            <h5 class="text-center mt-3 mb-4 boldtext">UI App Design</h5><br>
-            <div id="carouselUI" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="Image/UI1.png" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselUI" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselUI" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </a>
+          <a class="carousel-control-prev" href="#carouselVexel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselVexel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="row border-top border-gray my-5 justify-content-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
+        <h5 class="text-center mt-3 mb-4 boldtext">UI App Design</h5><br>
+        <div id="carouselUI" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Image/UI1.png" class="d-block w-100" alt="...">
             </div>
           </div>
+          <a class="carousel-control-prev" href="#carouselUI" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselUI" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
       </div>
       
       <br>
-
-      <!-- Footer -->
-      <div class="card text-center">
-        <div class="card-header ">
-          © Mas Proxy 2021
+    </div>
+    <!-- Footer -->
+    <div class="card text-center">
+      <div class="card-header">
+        <div class="row my-3 row-cols-auto justify-content-center">
+          <div class="col">
+            <a href="https://www.instagram.com/alfaauzan/?hl=id" target="_blank"><img src="https://img.icons8.com/ios/36/000000/instagram-new.png" style="width: auto; height: auto;"></a>
+          </div>
+          <div class="col">
+            <a href="https://id.pinterest.com/MasProxy/" target="_blank"><img src="https://img.icons8.com/ios/36/000000/pinterest.png" style="width: auto; height: auto;"></a>
+          </div>
+          <div class="col">
+            <a href="https://www.facebook.com/afif.alfauzan" target="_blank"><img src="https://img.icons8.com/ios/36/000000/facebook-new.png" style="width: auto; height: auto;"></a>
+          </div>
         </div>
+        ©2021 Designed by Afif Alfauzan
       </div>
     </div>
   </body>
