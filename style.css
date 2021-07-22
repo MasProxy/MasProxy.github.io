@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 body, html {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     height: 100%;
     /* background-color: #fafafa;     */
 }
+
 
 .bg-atas { 
     /* The image used */
@@ -21,6 +22,61 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.bagian-footer{
+    background-color: #c2d6d2;
+}
+
+
+.logo svg{
+    fill: #554e49!important;
+}
+
+.logo a{
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    font-size: 25pt;
+    color: #554e49!important;
+}
+
+.logo a:hover{
+    color: black!important;
+}
+
+.logo svg:hover{
+    fill: black!important;
+}
+
+.icon svg{
+    fill: #555555!important;
+}
+
+.icon svg:hover{
+    fill: #0275d8!important;
+}
+
+.nav-link{
+    color: #554e49!important;
+}
+
+.nav-link:hover{
+    color: black!important;
+}
+
+p.description{
+    font-size: 14pt
+}
+
+p{
+    font-size: 11pt;
+}
+
+.footer{
+    color: #555555!important;
+    font-size: 14pt;
+    font-family: 'VT323', monospace;
+    font-weight: 400;
 }
 
 h5.boldtext{
@@ -40,11 +96,6 @@ a.boldtext{
     font-size: 20pt;
 }
 
-a.judul{
-    font-family: 'VT323', monospace;
-    font-weight: 400;
-    font-size: 25pt;
-}
 
 
 .float{

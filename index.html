@@ -8,26 +8,29 @@
     <link rel="icon" href="./Image/Logo_MasProxy_outline.svg" type="image/gif" sizes="16x16">
 
     <link href='https://css.gg/chevron-up.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./action.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Welcome!</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Welcome</title>
   </head>
   <body>
     <script>
       AOS.init();
     </script>
 
-    <div class="bg-atas" id="Home">
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d6cbc2;" data-aos="fade-down" data-aos-once="true" data-aos-duration="2000">
+    <div class="bg-atas shadow-sm" id="Home">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d6cbc2;" data-aos="fade-down" data-aos-once="false" data-aos-duration="2000">
         <div class="container-fluid mx-3 py-2" data-aos="fade-right">
-          <a class="navbar-brand judul" onclick="goTo('Home')" type="button">
-            <img src="./Image/Logo_MasProxy.svg" width="36px" height="36px">
-            MAS PROXY</a>
+          <div class="logo">
+            <a class="navbar-brand judul" onclick="goTo('Home')" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25pt" height="25pt" viewBox="0 0 500 500"><rect x="102.6" y="23.96" width="61.91" height="233.62" transform="translate(88.28 -47.92) rotate(30)"/><path d="M446.54,341.08,379.38,193.57l53.34-92.39-53.62-31-31.24,54.11L316.35,55.87c-5.36-8.25-19.13-14.11-35.26-14.11-18.56,0-34,7.77-37.11,18L87.72,330.42l53.62,30.95L279.11,122.75l30.71,67.46-147,254.7,53.62,31,40.09-69.44H422c16.39,0,29.67-18.41,29.67-41.13C451.66,356.34,446.54,341.08,446.54,341.08ZM285.47,356.22l55.88-96.78,44.06,96.78Z"/></svg>
+              MAS PROXY</a>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -52,27 +55,61 @@
       <br><br>
     </div>
 
-    <a class="float" id="btn_up" onclick="goUp()" type="button" style="display: none;"><i class="gg-chevron-up" style="margin: auto;"></i></a>
+    <a class="float" id="btn_up" onclick="goUp()" type="button" style="display: none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16pt" height="16pt" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+      </svg>
+    </a>
 
     <div class="container" id="AboutMe">
-      <div class="row py-5 mx-auto" data-aos="fade-in" data-aos-once="true" data-aos-duration="1500">
+      <div class="row py-5 mx-auto">
         <div class="col-sm-4">
-          <img src="Image/profile.jpg" class="rounded-circle border border-light mx-auto d-block" alt="..." style="width: 200pt; height: 200pt;">
+          <img src="Image/profile.jpg" class="rounded-circle border border-light mx-auto d-block" alt="..." style="width: 200pt; height: 200pt;" data-aos="fade-right" data-aos-once="false" data-aos-duration="1500">
         </div>
         <div class="col-sm-8">
           <br><br><br>
-          <h3 class="text-center border-bottom border-primary pb-2 boldtext">Hello, my name is Afif Alfauzan</h3><br>
-          <h5 class="text-center">i'm a programmer and illustrator. I want to open a service in accordance with my skills, at the right price. I hope we can work together.</h5><br>
+          <div data-aos="fade-in" data-aos-once="false" data-aos-duration="1500">
+            <h3 class="text-center border-bottom border-primary pb-2 boldtext">Hello, my name is Afif Alfauzan</h3><br>
+            <p class="text-center description">i'm a programmer and illustrator. I want to open a service in accordance with my skills, at the right price. I hope we can work together.</p><br>
+
+          </div>
           <div class="row row-cols-auto justify-content-center">
-            <div class="col">
-              <a href="https://www.instagram.com/alfaauzan/?hl=id" target="_blank"><img src="https://img.icons8.com/ios/36/000000/instagram-new.png" style="width: auto; height: auto;"></a>
+            <div class="col icon" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
+              <a href="https://www.instagram.com/alfaauzan/?hl=id" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" height="30pt" width="30pt" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                  <path d="M1662 1174c285 0 516 231 516 516s-231 516-516 516-516-231-516-516 231-516 516-516zm-385-421h780c293 0 532 237 532 525v778c0 289-239 525-532 525h-780c-293 0-532-236-532-525v-778c0-289 240-525 532-525zm884 349c46 0 84 37 84 84 0 46-37 84-84 84-46 0-84-37-84-84 0-46 37-84 84-84zm-820-200h652c245 0 445 199 445 443v656c0 244-200 443-445 443h-652c-245 0-445-199-445-443v-656c0-244 200-443 445-443zM1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718 488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667 0zm1093 573c-280-280-666-453-1093-453S853 293 574 573c-280 280-453 666-453 1093s173 814 453 1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093zm-1098 774c188 0 341 153 341 341s-153 341-341 341c-189 0-341-153-341-341s153-341 341-341z"/>
+                </svg>
+              </a>
             </div>
-            <div class="col">
-              <a href="https://id.pinterest.com/MasProxy/" target="_blank"><img src="https://img.icons8.com/ios/36/000000/pinterest.png" style="width: auto; height: auto;"></a>
+            <div class="col icon" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
+              <a href="https://id.pinterest.com/MasProxy/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30pt" height="30pt" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640">
+                  <path d="M320-.012C143.529-.012-.012 143.482-.012 320S143.482 640.012 320 640.012 640.012 496.494 640.012 320 496.494-.012 320-.012zm0 597.244c-28.63 0-56.115-4.346-82.123-12.366 11.232-18.355 28.24-48.627 34.488-72.639 3.355-13.004 17.233-65.883 17.233-65.883 9 17.233 35.528 31.879 63.485 31.879 83.635 0 143.872-76.867 143.872-172.514 0-91.643-74.753-160.112-170.872-160.112-119.647 0-183.132 80.351-183.132 167.766 0 40.642 21.638 91.241 56.245 107.352 5.244 2.527 7.996 1.358 9.236-3.756.874-3.886 5.634-22.654 7.748-31.477.638-2.776.366-5.256-1.866-7.996-11.48-13.89-20.646-39.52-20.646-63.249 0-61.123 46.253-120.356 125.128-120.356 68.115 0 115.75 46.37 115.75 112.773 0 75.001-37.88 127.005-87.12 127.005-27.248 0-47.634-22.524-40.997-50.115 7.867-33 22.985-68.516 22.985-92.233 0-21.248-11.35-39.012-35.115-39.012-27.874 0-50.114 28.76-50.114 67.37 0 24.473 8.232 41.115 8.232 41.115S224.909 476.911 219.9 498.55c-5.634 24-3.355 57.639-.992 79.513-103.123-40.24-176.246-140.47-176.246-258.003 0-153.12 124.112-277.232 277.232-277.232 153.12 0 277.232 124.112 277.232 277.232 0 153.12-124.112 277.244-277.232 277.244l.106-.07z"/>
+                </svg>
+              </a>
             </div>
-            <div class="col">
-              <a href="https://www.facebook.com/afif.alfauzan" target="_blank"><img src="https://img.icons8.com/ios/36/000000/facebook-new.png" style="width: auto; height: auto;"></a>
+            <div class="col icon" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
+              <a href="https://www.deviantart.com/masproxy" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333333 333333" height="30pt" width="30pt" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                  <path d="M166667 0c46023 0 87690 18655 117851 48816s48816 71828 48816 117851-18655 87690-48816 117851-71828 48816-117851 48816-87690-18655-117851-48816S0 212690 0 166667 18655 78977 48816 48816 120644 0 166667 0zm55151 109970V77572h-32394l-3243 3275-15311 29136-4793 3239h-54572v44474h30002l2686 3239-32675 62432v32394l32398-6 3239-3275 15311-29131 4794-3243 54566 8 2-44478h-29998l-2687-3275 32673-62393zm51478-49931c-27287-27287-64987-44165-106628-44165-41642 0-79341 16878-106628 44165s-44165 64987-44165 106628c0 41642 16878 79341 44165 106628s64987 44165 106628 44165c41642 0 79341-16878 106628-44165s44165-64987 44165-106628c0-41642-16878-79341-44165-106628z" fill-rule="nonzero"/>
+                </svg>
+              </a>
             </div>
+            <div class="col icon" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
+              <a href="https://www.linkedin.com/in/afifalfauzan352/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 3333 3333" height="30pt" width="30pt" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                  <path d="M1465 1354h322v165h5c45-81 155-165 318-165 340 0 403 212 403 488v561h-336v-498c0-119-2-271-175-271-175 0-202 129-202 263v506h-336V1354zM1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718 488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667 0zm1093 573c-280-280-666-453-1093-453S853 293 574 573c-280 280-453 666-453 1093s173 814 453 1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093zm-1528 490c0 97-78 175-175 175s-175-78-175-175 78-175 175-175 175 78 175 175zm-350 291h350v1049H882V1354z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="col icon" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
+              <a href="https://www.facebook.com/afif.alfauzan" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" height="30pt" width="30pt" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                  <path d="M1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718 488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667 0zm181 1137h301V776h-301c-232 0-421 189-421 421v181h-241v361h241v963h361v-963h301l60-361h-361v-181c0-33 28-60 60-60zm913-563c-280-280-666-453-1093-453S854 294 575 574c-280 280-453 666-453 1093s173 814 453 1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093z" fill-rule="nonzero"/>
+                </svg>
+              </a>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -80,22 +117,22 @@
       <!-- My Offer -->
       <div class="container">
         <div class="row py-4 mx-auto mb-5">
-          <h4 class="text text-center py-3 border-top border-gray" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">Which I am Offering</h4>
-          <div class="col" data-aos="fade-right" data-aos-once="true" data-aos-duration="3500">
+          <h4 class="text text-center py-3 border-top border-gray" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000">Which I am Offering</h4>
+          <div class="col" data-aos="fade-right" data-aos-once="false" data-aos-duration="3500">
             <div class="card mx-auto shadow-sm my-3" style="width: 18rem; height: 15rem;">
               <div class="card-body">
                 <i class="gg-code-slash my-3 mx-auto"></i>
                 <h6 class="text text-center boldtext">Web & App Developer</h6>
                 <p>
                   <li>Front end developer</li>
-                  <li>Unity developer</li>
-                  <li>Android studio developer</li>
+                  <li>Unity programmer</li>
+                  <li>Desktop app developer</li>
                 </p>
               </div>
             </div>
           </div>
           
-          <div class="col" data-aos="fade-up" data-aos-once="true" data-aos-duration="3500">
+          <div class="col" data-aos="fade-up" data-aos-once="false" data-aos-duration="3500">
             <div class="card mx-auto shadow-sm my-3" style="width: 18rem; height: 15rem;">
               <div class="card-body">
                 <i class="gg-display-grid my-3 mx-auto"></i>
@@ -106,15 +143,14 @@
               </div>
             </div>
           </div>
-          <div class="col" data-aos="fade-left" data-aos-once="true" data-aos-duration="3500">
+          <div class="col" data-aos="fade-left" data-aos-once="false" data-aos-duration="3500">
             <div class="card mx-auto shadow-sm my-3" style="width: 18rem; height: 15rem;">
               <div class="card-body">
                 <i class="gg-image my-3 mx-auto"></i>
-                <h6 class="text text-center boldtext">Image Illustration & Editing</h6>
-                <li>Background Painting Anime Style</li>
-                <li>Flat design object</li>
+                <h6 class="text text-center boldtext">Illustration & Image Editing</h6>
+                <li>Background illustration</li>
+                <li>Flat illustration</li>
                 <li>Photo manipulation</li>
-                <li>Background remover</li>
                 <li>Vexel art</li>
               </div>
             </div>
@@ -124,219 +160,334 @@
 
 
       <!-- My SKill -->
-      <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext" id="MySkill" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">My Skill</h3><br>
-      <h5 class="text-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">Design</h5>
+      <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext" id="MySkill" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000">My Skill</h3><br>
+
+      <h5 class="text-center" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000">Design</h5>
       <div class="row mx-auto" style="width: 50%; height: 50%;">
-        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="false" data-aos-duration="1500">
           <img src="https://img.icons8.com/color/60/000000/adobe-illustrator.png" style="width: auto; height: auto;">
-          <br><h6>Adobe Illustrator<h6><br>
+          <br><p>Adobe Illustrator<p><br>
         </div>
-        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="2500">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="false" data-aos-duration="2500">
           <img src="https://img.icons8.com/color/60/000000/adobe-photoshop.png" style="width: auto; height: auto;">
-          <br><h6>Adobe Photoshop<h6><br>
+          <br><p>Adobe Photoshop<p><br>
         </div>
-        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="3500">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
           <img src="https://img.icons8.com/color/60/000000/adobe-xd.png" style="width: auto; height: auto;">
-          <br><h6>Adobe XD<h6><br>
+          <br><p>Adobe XD<p><br>
         </div>
       </div>
       <br><br>
 
 
       <h5 class="text-center border-top border-gray"></h5>
-      <h5 class="text-center py-2" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">Video Editing</h5>
+      <h5 class="text-center py-2" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000">Video Editing</h5>
       <div class="row mx-auto " style="width: 50%; height: 50%;">
-        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="false" data-aos-duration="1500">
           <img src="https://img.icons8.com/color/60/000000/adobe-premiere-pro.png" style="width: auto; height: auto;">
-          <br><h6>Adobe Premiere<h6><br>
+          <br><p>Adobe Premiere<p><br>
         </div>
         
-        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="2500">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="false" data-aos-duration="2500">
           <img src="https://img.icons8.com/color/60/000000/adobe-after-effects.png" style="width: auto; height: auto;">
-          <br><h6>Adobe After Effect<h6><br>
+          <br><p>Adobe After Effect<p><br>
         </div>
       </div>
       <br><br>
       
       <h5 class="text-center border-top border-gray"></h5>
-      <h5 class="text-center py-2" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">Game Engine</h5>
+      <h5 class="text-center py-2" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000">Game Engine</h5>
       <div class="row mx-auto" style="width: 50%; height: 50%;">
-        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="false" data-aos-duration="1500">
           <img src="https://img.icons8.com/ios-filled/60/000000/unity.png" style="width: auto; height: auto;">
-          <br><h6>Unity<h6><br>
+          <br><p>Unity<p><br>
         </div>
       </div>
       <br><br>
       
       <h5 class="text-center border-top border-gray"></h5>
-      <h5 class="text-center py-2" data-aos="fade-in" data-aos-once="true" data-aos-duration="1000">Programming Language</h5>
+      <h5 class="text-center py-2" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000">Programming Language</h5>
       <div class="row mx-auto" style="width: 50%; height: 50%;">
-        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1500">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="false" data-aos-duration="1500">
           <img src="https://img.icons8.com/color/60/000000/c-programming.png" style="width: auto; height: auto;">
-          <br><h6>C<h6><br>
+          <br><p>C<p><br>
         </div>
-        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="2500">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="false" data-aos-duration="2500">
           <img src="https://img.icons8.com/officel/60/000000/php-logo.png" style="width: auto; height: auto;">
-          <br><h6>PHP<h6><br>
+          <br><p>PHP<p><br>
         </div>
-        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="3500">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
           <img src="https://img.icons8.com/color/60/000000/c-sharp-logo-2.png" style="width: auto; height: auto;">
-          <br><h6>C#<h6><br>
+          <br><p>C#<p><br>
         </div>
-        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="4500">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="false" data-aos-duration="4500">
           <img src="https://img.icons8.com/color/60/000000/java-coffee-cup-logo.png" style="width: auto; height: auto;">
-          <br><h6>Java<h6><br>
+          <br><p>Java<p><br>
         </div>
-        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="true" data-aos-duration="5500">
+        <div class="col md-auto mx-auto text-center" data-aos="zoom-in" data-aos-once="false" data-aos-duration="5500">
           <img src="https://img.icons8.com/color/60/000000/javascript.png" style="width: auto; height: auto;"/>
-          <br><h6>Javascript<h6><br>
+          <br><p>Javascript<p><br>
         </div>
       </div>
       <br><br>
 
       <!-- Gallery -->
-      <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext" id="MyProject">My Project</h3>
+      <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext" id="MyProject" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000">My Project</h3>
       <br>
-      <div class="row mb-5 justify-content-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
-        <h5 class="text-center mt-3 mb-4 boldtext">Flat Illustration</h5><br>
-        <div id="carouselFlatIllustration" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Image/flat_coffe_cup.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="Image/flat_donut_with_topping.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="Image/flat_wireless_earphone.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="Image/flat_chocolate_ice_cream.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselFlatIllustration" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselFlatIllustration" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div>
-      </div>
-      <div class="row mb-5 border-top border-gray justify-content-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
-        <h5 class="text-center mt-3 mb-4 boldtext">Manipulation</h5><br>
-        <div id="carouselManipulation" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Image/c1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="Image/c2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="Image/c3.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselManipulation" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselManipulation" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div>
-      </div>
-      <div class="row border-top border-gray my-5 justify-content-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
-        <h5 class="text-center mt-3 mb-4 boldtext">Background Drawing</h5><br>
-        <div id="carouselBG" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Image/bg-atas.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="Image/d1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="Image/d2.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselBG" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselBG" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div>
-      </div>
 
-      <div class="row border-top border-gray my-5 justify-content-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
-        <h5 class="text-center mt-3 mb-4 boldtext">Vexel Art</h5><br>
-        <div id="carouselVexel" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Image/b1.png" class="d-block w-100" alt="...">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000">
+          <button class="nav-link active" id="nav-programming-tab" data-bs-toggle="tab" data-bs-target="#nav-programming" type="button" role="tab" aria-controls="nav-programming" aria-selected="false">Program Project</button>
+          <button class="nav-link" id="nav-illustration-tab" data-bs-toggle="tab" data-bs-target="#nav-illustration" type="button" role="tab" aria-controls="nav-illustration" aria-selected="false">Illustration Project</button>
+          <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+        </div>
+      </nav>
+      
+      <div class="tab-content" id="nav-tabContent" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000">
+        <div class="tab-pane fade show active" id="nav-programming" role="tabpanel" aria-labelledby="nav-programming-tab">
+          
+          <!-- Program project -->
+          <div class="row mb-5 justify-content-md-center" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000">
+            <h5 class="boldtext py-2"> Hope In Arlyen - Prologue</h5>
+
+            <div id="HopeInArlyen" class="carousel slide my-2" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#HopeInArlyen" data-bs-slide-to="0" class="active" aria-current="false" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#HopeInArlyen" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#HopeInArlyen" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#HopeInArlyen" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#HopeInArlyen" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./Image/HA1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Image/HA2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Image/HA3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Image/HA4.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./Image/HA5.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#HopeInArlyen" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#HopeInArlyen" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="carousel-item">
-              <img src="Image/b2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="Image/b3.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="Image/b4.png" class="d-block w-100" alt="...">
+
+            
+              <div class="d-flex justify-content-center">
+                <table class="table" style="width: 800pt;">
+                  <tr>
+                    <th>Title</th>
+                    <td>Hope In Arlyen</td>
+                  </tr>
+                  <tr>
+                    <th>Platform</th>
+                    <td>Windows 64 Bit</td>
+                  </tr>
+                  <tr>
+                    <th>Genre</th>
+                    <td>Puzzle, Advanture</td>
+                  </tr>
+                  <tr>
+                    <th>Description</th>
+                    <td>a game tells the adventures of Mira and Atria in collecting three gems with the purpose that Mira can meet her father again</td>
+                  </tr>
+                </table>
+              </div>
+              
+              <div class="d-flex justify-content-center">
+                <button onclick="window.open('https://bit.ly/3iCsONp', '_blank');" type="button" class="btn btn-primary" style="width: 100pt;">Download</button>
+              </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="nav-illustration" role="tabpanel" aria-labelledby="nav-illustration-tab">
+          
+          <!-- Illustration project -->
+          <div class="row mb-5 justify-content-center" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000">
+            <h5 class="text-center mt-3 mb-4 boldtext">Flat Illustration</h5><br>
+            <div id="carouselFlatIllustration" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Image/flat_coffe_cup.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/flat_donut_with_topping.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/flat_wireless_earphone.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/flat_chocolate_ice_cream.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselFlatIllustration" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselFlatIllustration" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselVexel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselVexel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
+          <div class="row mb-5 border-top border-gray justify-content-center" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000">
+            <h5 class="text-center mt-3 mb-4 boldtext">Manipulation</h5><br>
+            <div id="carouselManipulation" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Image/c1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/c2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/c3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselManipulation" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselManipulation" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+          </div>
+          <div class="row border-top border-gray my-5 justify-content-center" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000">
+            <h5 class="text-center mt-3 mb-4 boldtext">Background illustration</h5><br>
+            <div id="carouselBG" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Image/bg-atas.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/d1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/d2.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselBG" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselBG" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="row border-top border-gray my-5 justify-content-center" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000">
+            <h5 class="text-center mt-3 mb-4 boldtext">Vexel Art</h5><br>
+            <div id="carouselVexel" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Image/b1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/b2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/b3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="Image/b4.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselVexel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselVexel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="row border-top border-gray my-5 justify-content-center" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000">
+            <h5 class="text-center mt-3 mb-4 boldtext">UI App Design</h5><br>
+            <div id="carouselUI" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Image/UI1.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselUI" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselUI" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+          </div>
         </div>
+
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
       </div>
       
-      <div class="row border-top border-gray my-5 justify-content-center" data-aos="fade-in" data-aos-once="true" data-aos-duration="2000">
-        <h5 class="text-center mt-3 mb-4 boldtext">UI App Design</h5><br>
-        <div id="carouselUI" class="carousel slide" data-bs-ride="carousel" style="width: 80%; height: 80%;">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Image/UI1.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselUI" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselUI" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div>
-      </div>
       
       <br>
     </div>
     <!-- Footer -->
-    <div class="card text-center">
+    <div class="card text-center bagian-footer">
       <div class="card-header">
         <div class="row my-3 row-cols-auto justify-content-center">
-          <div class="col">
-            <a href="https://www.instagram.com/alfaauzan/?hl=id" target="_blank"><img src="https://img.icons8.com/ios/36/000000/instagram-new.png" style="width: auto; height: auto;"></a>
+          <div class="col icon" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
+            <a href="https://www.instagram.com/alfaauzan/?hl=id" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" height="25pt" width="25pt" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                <path d="M1662 1174c285 0 516 231 516 516s-231 516-516 516-516-231-516-516 231-516 516-516zm-385-421h780c293 0 532 237 532 525v778c0 289-239 525-532 525h-780c-293 0-532-236-532-525v-778c0-289 240-525 532-525zm884 349c46 0 84 37 84 84 0 46-37 84-84 84-46 0-84-37-84-84 0-46 37-84 84-84zm-820-200h652c245 0 445 199 445 443v656c0 244-200 443-445 443h-652c-245 0-445-199-445-443v-656c0-244 200-443 445-443zM1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718 488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667 0zm1093 573c-280-280-666-453-1093-453S853 293 574 573c-280 280-453 666-453 1093s173 814 453 1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093zm-1098 774c188 0 341 153 341 341s-153 341-341 341c-189 0-341-153-341-341s153-341 341-341z"/>
+              </svg>
+            </a>
           </div>
-          <div class="col">
-            <a href="https://id.pinterest.com/MasProxy/" target="_blank"><img src="https://img.icons8.com/ios/36/000000/pinterest.png" style="width: auto; height: auto;"></a>
+          <div class="col icon" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
+            <a href="https://id.pinterest.com/MasProxy/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25pt" height="25pt" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 640 640">
+                <path d="M320-.012C143.529-.012-.012 143.482-.012 320S143.482 640.012 320 640.012 640.012 496.494 640.012 320 496.494-.012 320-.012zm0 597.244c-28.63 0-56.115-4.346-82.123-12.366 11.232-18.355 28.24-48.627 34.488-72.639 3.355-13.004 17.233-65.883 17.233-65.883 9 17.233 35.528 31.879 63.485 31.879 83.635 0 143.872-76.867 143.872-172.514 0-91.643-74.753-160.112-170.872-160.112-119.647 0-183.132 80.351-183.132 167.766 0 40.642 21.638 91.241 56.245 107.352 5.244 2.527 7.996 1.358 9.236-3.756.874-3.886 5.634-22.654 7.748-31.477.638-2.776.366-5.256-1.866-7.996-11.48-13.89-20.646-39.52-20.646-63.249 0-61.123 46.253-120.356 125.128-120.356 68.115 0 115.75 46.37 115.75 112.773 0 75.001-37.88 127.005-87.12 127.005-27.248 0-47.634-22.524-40.997-50.115 7.867-33 22.985-68.516 22.985-92.233 0-21.248-11.35-39.012-35.115-39.012-27.874 0-50.114 28.76-50.114 67.37 0 24.473 8.232 41.115 8.232 41.115S224.909 476.911 219.9 498.55c-5.634 24-3.355 57.639-.992 79.513-103.123-40.24-176.246-140.47-176.246-258.003 0-153.12 124.112-277.232 277.232-277.232 153.12 0 277.232 124.112 277.232 277.232 0 153.12-124.112 277.244-277.232 277.244l.106-.07z"/>
+              </svg>
+            </a>
           </div>
-          <div class="col">
-            <a href="https://www.facebook.com/afif.alfauzan" target="_blank"><img src="https://img.icons8.com/ios/36/000000/facebook-new.png" style="width: auto; height: auto;"></a>
+          <div class="col icon" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
+            <a href="https://www.deviantart.com/masproxy" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333333 333333" height="25pt" width="25pt" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                <path d="M166667 0c46023 0 87690 18655 117851 48816s48816 71828 48816 117851-18655 87690-48816 117851-71828 48816-117851 48816-87690-18655-117851-48816S0 212690 0 166667 18655 78977 48816 48816 120644 0 166667 0zm55151 109970V77572h-32394l-3243 3275-15311 29136-4793 3239h-54572v44474h30002l2686 3239-32675 62432v32394l32398-6 3239-3275 15311-29131 4794-3243 54566 8 2-44478h-29998l-2687-3275 32673-62393zm51478-49931c-27287-27287-64987-44165-106628-44165-41642 0-79341 16878-106628 44165s-44165 64987-44165 106628c0 41642 16878 79341 44165 106628s64987 44165 106628 44165c41642 0 79341-16878 106628-44165s44165-64987 44165-106628c0-41642-16878-79341-44165-106628z" fill-rule="nonzero"/>
+              </svg>
+            </a>
+          </div>
+          <div class="col icon" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
+            <a href="https://www.linkedin.com/in/afifalfauzan352/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 3333 3333" height="25pt" width="25pt" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                <path d="M1465 1354h322v165h5c45-81 155-165 318-165 340 0 403 212 403 488v561h-336v-498c0-119-2-271-175-271-175 0-202 129-202 263v506h-336V1354zM1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718 488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667 0zm1093 573c-280-280-666-453-1093-453S853 293 574 573c-280 280-453 666-453 1093s173 814 453 1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093zm-1528 490c0 97-78 175-175 175s-175-78-175-175 78-175 175-175 175 78 175 175zm-350 291h350v1049H882V1354z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="col icon" data-aos="zoom-in" data-aos-once="false" data-aos-duration="3500">
+            <a href="https://www.facebook.com/afif.alfauzan" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3333 3333" height="25pt" width="25pt" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                <path d="M1667 0c460 0 877 187 1179 488 302 302 488 718 488 1179 0 460-187 877-488 1179-302 302-718 488-1179 488-460 0-877-187-1179-488C186 2544 0 2128 0 1667c0-460 187-877 488-1179C790 186 1206 0 1667 0zm181 1137h301V776h-301c-232 0-421 189-421 421v181h-241v361h241v963h361v-963h301l60-361h-361v-181c0-33 28-60 60-60zm913-563c-280-280-666-453-1093-453S854 294 575 574c-280 280-453 666-453 1093s173 814 453 1093c280 280 666 453 1093 453s814-173 1093-453c280-280 453-666 453-1093s-173-814-453-1093z" fill-rule="nonzero"/>
+              </svg>
+            </a>
           </div>
         </div>
-        ©2021 Designed by Afif Alfauzan
+        <div class="footer">©2021 Designed by Afif Alfauzan</div>
       </div>
     </div>
   </body>
