@@ -10,7 +10,7 @@ body, html {
 }
 
 
-.bg-atas { 
+.bg-home { 
     /* The image used */
     background-image: url("Image/animation.gif");
     background-color: #d6cbc2;
@@ -24,7 +24,7 @@ body, html {
     background-size: contain;
 }
 
-.bagian-footer{
+.footer-section{
     background-color: #c2d6d2;
 }
 
