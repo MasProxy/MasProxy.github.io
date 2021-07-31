@@ -122,13 +122,8 @@ a.boldtext{
 }
 
 .float:hover{
-    color:#73beff;
+    color:#73beff !important;
 }
-
-.float:target{
-    color: white;
-}
-
 
 /* Icon code */
 .gg-code-slash {
