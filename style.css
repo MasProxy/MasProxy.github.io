@@ -121,6 +121,14 @@ a.boldtext{
     padding-top: 12px;
 }
 
+.float:hover{
+    color:#73beff;
+}
+
+.float:target{
+    color: white;
+}
+
 
 /* Icon code */
 .gg-code-slash {
