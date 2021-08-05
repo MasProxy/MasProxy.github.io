@@ -1,0 +1,102 @@
+/* Icon code */
+.gg-code-slash {
+    display: block;
+    --ggs:2;
+    color:#0275d8;
+    position: relative;
+    box-sizing: border-box;
+    transform: rotate(15deg) scale(var(--ggs,1));
+    width: 2px;
+    height: 16px;
+    background: currentColor
+}
+.gg-code-slash::after,
+.gg-code-slash::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    transform: rotate(-60deg)
+}
+.gg-code-slash::before {
+    border-left: 2px solid;
+    border-top: 2px solid;
+    left: -8px;
+    top: 5px
+}
+.gg-code-slash::after {
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    right: -8px;
+    top: 3px
+}
+
+/* Icon image */
+.gg-image {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    color:#0275d8;
+    transform: scale(var(--ggs,1));
+    --ggs:2;
+    width: 20px;
+    height: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 0 2px;
+    border-radius: 2px
+}
+.gg-image::after,
+.gg-image::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border: 2px solid
+}
+.gg-image::after {
+    transform: rotate(45deg);
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    top: 9px;
+    left: 6px
+}
+.gg-image::before {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    top: 2px;
+    left: 2px
+}
+
+/* icon display */
+.gg-display-grid {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    --ggs:2;
+    color:#0275d8;
+    transform: scale(var(--ggs,1));
+    height: 14px;
+    width: 14px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px
+}
+.gg-display-grid::after,
+.gg-display-grid::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 4px;
+    border-right: 4px solid;
+    border-left: 4px solid;
+    top: 0;
+    left: 0
+}
+.gg-display-grid::before {
+    top: 6px
+}
