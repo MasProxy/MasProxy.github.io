@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(241, 241, 241)!important;
+}
+
+.row{
+    background-color: white!important;
+}
+
+.productlist{
+    width: 30%!important;
+    background-color: rgb(241, 241, 241)!important;
+}
+
+.orderColumn{
+    background-color: rgb(241, 241, 241)!important;
+}
+
+.orderListSection{
+    position: fixed;
+    right: 15%;
+    top: 20pt;
+    max-width: 500pt;
+    width: 25%;
+}
+
+.orderList{
+    margin-top: 20pt;
+    height: 360pt;
+    max-height: 400pt;
+}
+
+.order{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 360pt;
+}
+
+
+.float{
+    display: none;
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+    right:30px;
+    z-index: 99;
+	background-color:white;
+	color:#FFF;
+	border-radius:50px;
+    text-align:center;
+    padding-top: 15px;
+}
+
+.float svg{
+    fill: green;
+}
+
+@media screen and (max-width: 550px){
+    .productlist{
+        width: 100%!important;
+    }
+
+    .orderColumn{
+        display: none;
+    }
+
+    .float{
+        display: inline;
+    }
+}
+
+

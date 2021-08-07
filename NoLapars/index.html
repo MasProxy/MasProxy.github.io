@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="./NoLapars.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <title>No Lapars</title>
+</head>
+<body>
+    <div id="app">
+        <a class="float shadow" id="btn_cart"  type="button">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="16pt" height="16pt" viewBox="0 0 106.53 122.88">
+                <title>shopping-bag</title><path d="M4.93,30.34H27.41V25.76a25.77,25.77,0,0,1,51.53,0v4.58H101.6a4.91,4.91,0,0,1,3.47,1.45h0a4.9,4.9,0,0,1,1.44,3.48v69.9a17.75,17.75,0,0,1-17.7,17.7H17.7A17.75,17.75,0,0,1,0,105.18V35.28A4.91,4.91,0,0,1,1.45,31.8h0a4.91,4.91,0,0,1,3.47-1.45Zm28.76,0h39V25.76a19.49,19.49,0,0,0-39,0v4.58Zm-6.28,13V36.62H6.28v62h94V36.62H78.94v6.76a6.48,6.48,0,1,1-6.28-.12V36.62h-39v6.71a6.48,6.48,0,1,1-6.28,0Z"/>
+            </svg>
+        </a>
+
+        <div class="container">
+            <div class="row">
+                <div class="col productlist">
+                    <h6>Food</h6>
+                    
+                    <div class="row py-3 align-items-center border-bottom" v-for="item in foodList" width="50%">
+                        <div class="col-auto">
+                            <img class="img-fluid rounded" v-bind:src="item.imageUrl" alt="" height="100pt" width="100pt">
+                        </div>
+                        <div class="col">
+                            <p>{{item.name}}</p>
+                        </div>
+                        <div class="col">
+                            <p>Rp{{item.price}}</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-success" @click="addToCart(item.name, item.price)">Add</button>
+                        </div>
+                    </div>
+                    
+                    <h6>Drink</h6>
+                    <div class="row py-3 align-items-center border-bottom" v-for="item in drinkList" width="50%">
+                        <div class="col-auto">
+                            <img class="img-fluid rounded" v-bind:src="item.imageUrl" alt="" height="100pt" width="100pt">
+                        </div>
+                        <div class="col">
+                            <p>{{item.name}}</p>
+                        </div>
+                        <div class="col">
+                            <p>Rp{{item.price}}</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-success" @click="addToCart(item.name, item.price)">Add</button>
+                        </div>
+                    </div>
+                    
+                    <h6>Desert</h6>
+                    <div class="row py-3 align-items-center border-bottom" v-for="item in dessertList">
+                        <div class="col-auto">
+                            <img class="img-fluid rounded" v-bind:src="item.imageUrl" alt="" height="100pt" width="100pt">
+                        </div>
+                        <div class="col">
+                            <p>{{item.name}}</p>
+                        </div>
+                        <div class="col">
+                            <p>Rp{{item.price}}</p>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-outline-success" @click="addToCart(item.name, item.price)">Add</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col orderColumn">
+                    <div class="orderListSection">
+                        <div class="card">
+                            <div class="card-header">
+                                <h6 class="text-center ">Your Order</h6>
+                            </div>
+                            <div class="card-body" style="height: 80vh; max-height: 500pt;">
+                                <div class="orderList">
+                                    <div v-if="cart.length == 0" style="padding-top: 40%;">
+                                        <div class="d-flex flex-wrap justify-content-center">
+                                            <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="100pt" height="100pt" fill="currentColor" class="bi bi-bag-x" viewBox="0 0 16 16" style="fill: rgb(224, 221, 216);">
+                                                <path fill-rule="evenodd" d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708z"/>
+                                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                            </svg>
+                                        </div>
+                                        <p class="text-center">Your Cart is empty</p>
+                                    </div>
+                                    <div id="cartList" class="order">
+                                        <div class="row row-cols-2" v-for="item in cart">
+                                            <div class="col">
+                                                <p>{{item.name}}</p>
+                                            </div>
+                                            <div class="col">
+                                                <p>Rp{{item.price}}</p>
+                                            </div>
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <button type="button" class="btn btn-success btn-sm" @click="decreaseItem(item.name, item.price)">-</button>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <p>{{item.quantity}}</p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <button type="button" class="btn btn-success btn-sm" @click="increaseItem(item.name, item.price)">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="border-top py-2 px-3">
+                                    <div class="row row-cols-2">
+                                        <div class="col">
+                                            <p>Total Harga</p>
+                                        </div>
+                                        <div class="col">
+                                            <p>Rp{{finalPrice}}</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="row py-3">
+                                        <button type="button" class="btn btn-success">Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="./NoLapars.js"></script>
+</body>
+</html>
