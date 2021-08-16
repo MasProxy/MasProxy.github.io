@@ -105,7 +105,9 @@ a.boldtext{
     font-size: 20pt;
 }
 
-
+.skillSection{
+    margin-bottom: 20pt;
+}
 
 .float{
 	position:fixed;
