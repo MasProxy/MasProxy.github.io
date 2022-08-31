@@ -132,6 +132,19 @@ a.boldtext{
     height: 50%;
 }
 
+
+.carousel-indicators button{
+    width: 100px !important;
+}
+
+.carousel-indicators{
+    height: 50pt;
+    position: static;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 0px 0px 0px 0px;
+}
+
 @media screen and (max-device-width: 480px) {
     .image-carousel{
         width: 80%; 
