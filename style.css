@@ -163,7 +163,7 @@ a.boldtext{
 
 @media screen and (max-device-width: 480px) {
     .image-carousel{
-        width: 80%; 
-        height: 80%;
+        width: 100%; 
+        height: 100%;
     }
 }

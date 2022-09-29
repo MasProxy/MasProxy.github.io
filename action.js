@@ -17,16 +17,20 @@ const app = Vue.createApp({
             }
 
             if(window.scrollY > window.innerHeight - 150) {
+                this.currentColor = 'rgba(245, 245, 245, 1)';
                 $('.navbar').css('background-color', 'rgba(245, 245, 245, 1)');
                 $('.navbar').addClass('shadow-sm');
             }else if(window.scrollY > window.innerHeight - 190){
+                this.currentColor = 'rgba(245, 245, 245, 0.5)';
                 $('.navbar').css('background-color', 'rgba(245, 245, 245, 0.5)');
                 $('.navbar').addClass('shadow-sm');
             }else if(window.scrollY > window.innerHeight - 230){
+                this.currentColor = 'rgba(245, 245, 245, 0.2)';
                 $('.navbar').css('background-color', 'rgba(245, 245, 245, 0.2)');
                 $('.navbar').addClass('shadow-sm');
             }else{
-                $('.navbar').css('background-color', 'rgba(245, 245, 245, 0)');
+                this.currentColor = 'rgba(214, 203, 194, 0.5)';
+                $('.navbar').css('background-color', 'rgba(214, 203, 194, 0.5)');
                 $('.navbar').removeClass('shadow-sm');
             }
         },
@@ -38,7 +42,23 @@ const app = Vue.createApp({
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             $('#btn_up').css('display', 'white');
-        }
+        },
+        // expand(){
+        //     this.navbarExpand = $('.navbar-toggler').attr('aria-expanded');
+        // }
+    },watch:{
+        // navbarExpand(value){
+        //     if(value && (this.currentColor == 'rgba(245, 245, 245, 0)' || this.currentColor == '')){
+        //         $('.navbar').css('background-color', 'rgba(214, 203, 194, 0.5)');
+        //     }else{
+        //         $('.navbar').css('background-color', this.currentColor);
+        //     }
+        // }
+        // navBar(){
+        //     if(this.navbarExpand){
+        //         return {'background-color': '#d6cbc2'};
+        //     }
+        // }
     }
 });
 
@@ -54,8 +74,6 @@ window.onload = function(){
         } 
     }, false); 
 }
-
-
 
 function goURL(url){
     window.open = url;
