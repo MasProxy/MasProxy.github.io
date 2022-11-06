@@ -20,10 +20,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Welcome</title>
   </head>
-  <body>
-    
+  <body> 
     <div id="app">
-      <div class="bg-home shadow-sm" id="Home">
+      <section class="bg-home shadow-sm" id="Home">
         <nav class="navbar fixed-top navbar-expand-lg navbar-light" data-aos="fade-down" data-aos-once="false" data-aos-duration="2000">
           <div class="container-fluid mx-3 py-2" data-aos="fade-right">
             <div class="logo">
@@ -53,7 +52,7 @@
           </div>
         </nav>
         <br><br>
-      </div>
+      </section>
   
       <a class="float" id="btn_up" @click="goUp" type="button" style="display: none;">
         <svg xmlns="http://www.w3.org/2000/svg" width="16pt" height="16pt" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
@@ -61,7 +60,7 @@
         </svg>
       </a>
   
-      <div class="container" id="AboutMe">
+      <section class="container" id="AboutMe">
         <div class="row py-5 mx-auto">
           <div class="col-sm-4">
             <img src="Image/profile.jpg" class="rounded-circle border border-light mx-auto d-block" alt="..." style="width: 200pt; height: 200pt;" data-aos="fade-right" data-aos-once="false" data-aos-duration="1500">
@@ -114,7 +113,7 @@
         </div>
         
         <!-- My Offer -->
-        <div class="container" style="overflow-y: hidden;">
+        <section class="container" style="overflow-y: hidden;">
           <div class="row py-4 mb-5">
             <h4 class="text text-center py-3 border-top border-gray" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000">Which I am Offering</h4>
             <div class="col" data-aos="fade-right" data-aos-once="false" data-aos-duration="3500">
@@ -161,11 +160,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
   
   
         <!-- My SKill -->
-        <div id="MySkill">
+        <section id="MySkill">
           <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000">My Skills</h3><br>
   
           <h5 class="text-center" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000">Design & Illustration</h5>
@@ -315,7 +314,7 @@
               <p class="my-1">Vue JS<p>
             </div>            
           </div>
-        </div>
+        </section>
   
         <!-- Gallery -->
         <h3 class="text text-center border-bottom border-top border-primary py-2 boldtext" id="MyProject" data-aos="fade-in" data-aos-once="false" data-aos-duration="1000">My Projects</h3>
@@ -328,7 +327,7 @@
           </div>
         </nav>
         
-        <div class="tab-content" id="nav-tabContent" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000">
+        <section class="tab-content" id="nav-tabContent" data-aos="fade-in" data-aos-once="false" data-aos-duration="2000">
           <div class="tab-pane fade show active" id="nav-programming" role="tabpanel" aria-labelledby="nav-programming-tab">
             
             <!-- Apps project -->
@@ -626,13 +625,13 @@
   
           </div>
           <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-        </div>
+        </section>
         
         
         <br>
-      </div>
+      </section>
       <!-- Footer -->
-      <div class="card text-center footer-section">
+      <footer class="card text-center footer-section">
         <div class="card-header">
           <div class="row my-3 row-cols-auto justify-content-center">
             <div class="col icon icon-footer">
@@ -673,7 +672,7 @@
           </div>
           <div class="footer">©2022 Designed by Afif Alfauzan</div>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 
